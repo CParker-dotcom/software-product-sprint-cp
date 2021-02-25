@@ -66,4 +66,6 @@ function openTab(evt, tabName) {
   evt.currentTarget.className += " active";
 }
 
+// This opens the Home page automatically. 
+document.getElementById("OpenOnDefault").click();
 
