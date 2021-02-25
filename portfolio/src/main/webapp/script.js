@@ -13,16 +13,57 @@
 // limitations under the License.
 
 /**
- * Adds a random greeting to the page.
+ * Adds a random fun fact to the page.
  */
-function addRandomGreeting() {
-  const greetings =
-      ['Hello world!', '¡Hola Mundo!', '你好，世界！', 'Bonjour le monde!'];
+function addRandomFunFact() {
+  const funfacts =
+      ['I love food!', 'I love cooking/baking shows.', 'When they go low, we go high.', 'Winter is coming!', 'My hidden talent is napping.'];
 
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
+  // Pick a random fun fact.
+  const funfact = funfacts[Math.floor(Math.random() * funfacts.length)];
 
   // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
+  const funfactContainer = document.getElementById('funfact-container');
+  funfactContainer.innerText = funfact;
 }
+
+/** 
+ * Adds Contact info to page 
+ */
+function addRandomContact() {
+  const contactinfo =
+      ['Email: chanteparker100@gmail.com', 'LinkedIn: linkedin.com/in/chante-parker-a44402198', 'GitHub: CParker-dotcom'];
+
+  // Pick a random fun fact.
+  const contact = contactinfo[Math.floor(Math.random() * contactinfo.length)];
+
+  // Add it to the page.
+  const contactContainer = document.getElementById('contact-container');
+  contactContainer.innerText = contact;
+}
+
+/**
+* Adds the tab to page. 
+*/
+function openTab(evt, tabName) {
+  // Setting all the variables 
+  var tab, tabcontent, tablinks;
+
+  // This hides all the content of the tabs. 
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (tab = 0; tab < tabcontent.length; tab++) {
+    tabcontent[tab].style.display = "none";
+  }
+
+  // This removes the class 'active'
+  tablinks = document.getElementsByClassName("tablinks");
+  for (tab = 0; tab < tablinks.length; tab++) {
+    tablinks[tab].className = tablinks[tab].className.replace(" active", "");
+  }
+
+  // This shows what is the current tab that is open. 
+  document.getElementById(tabName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
