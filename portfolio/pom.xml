@@ -16,7 +16,7 @@
 
     <!-- Project-specific properties -->
     <exec.mainClass>com.google.sps.ServerMain</exec.mainClass>
-    <googleCloudProjectId>Y111869337595</googleCloudProjectId>
+    <googleCloudProjectId>cparker-sps-spring21</googleCloudProjectId>
   </properties>
 
   <dependencies>
