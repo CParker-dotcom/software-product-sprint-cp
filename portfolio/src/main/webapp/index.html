@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Chante's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="newscript.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <center>
+      <title>Chante's Portfolio</title>
+      </center>
+      <div class="tab">
+  <button class="tablinks" onclick="openTab(event, 'Home')" id="OpenOnDefault">Home</button>
+  <button class="tablinks" onclick="openTab(event, 'AboutMe')">About Me</button>
+  <button class="tablinks" onclick="openTab(event, 'Projects')">Projects</button>
+  <button class="tablinks" onclick="openTab(event, 'Photos')">Photos</button>
+  <button class="tablinks" onclick="openTab(event, 'Contact')">Contact</button>
+</div>
+    <div id="Home" class="tabcontent">
+    <center>
+      <h1>Home</h1>
+      <h1> Chante Parker </h1>
+      <h3>This is Chante's portfolio. This portfolio tells a little bit about me. Enjoy! </h3>
+      </center>
+      <img src="images/1334842212nature-waterfall-animated-gif-2.gif" width="992" height="1108">
+    </div>
+
+
+    <div id="AboutMe" class="tabcontent">
+     <center>
+      <h1>About Me</h1>
+      </center>
+      <dl>
+      <p> My name is Chante Parker. </p>
+      <p> I am a computer science major at Adelphi University.</p> 
+      <p> I love to listen to music and watch Netflix. </p>
+      <p> I love sea animals. </p>
+      <p>I love food. </p>  
+      <p> I want to learn more about computer science and enhance my computer science skills. I want to take that knowledge and create amazing projects. </p>
+      </dl>
+      <center>
+      <img src="images/51420.jpg" width="600" height="400">
+      </center>
+      <p>Click here to get a random fun fact about me or one of my favorite quotes:</p>
+      <button onclick="addRandomFunFact()">Fun Fact</button>
+      <div id="funfact-container"></div>
+      </div>
+      
+    <div id="Projects" class="tabcontent">
+        <center>
+        <h1>Projects</h1> 
+        </center>
+        <dl>
+        <p> One project that I worked on was at Google CSSI. My team created a virtual message in the bottle website, where 
+            users could send postive messages to strangers and we also added a little sea adventure game with a message in the bottle.</p>
+        <img src="images/download-1.jpg" width="600" height="400">
+        <p> A current project that I am working on is with some students from my university from the computer science and math department. We are doing research on graph theory and 
+            various types of graphs. I am currently making a game, using Python, as a part of my research in graph theory. This game is about what happens if a person chooses a certain node and what would happen to the other nodes. 
+            Also, I am looking for winning strategies for both player one and player two. However, I am looking to expand on my research to explore more about graph theory. Now, I am particularly focused on trenary graphs. 
+        <img src="images/download.png" width="600" height="400">
+        </p>
+    </dl> 
+    </div>
+
+<div id="Photos" class="tabcontent">
+   <center>
+  <h1>Photos</h1>
+   </center>
+  <p>I like pictures and like to take pictures that are important to me. </p>
+ <p> I also like pictures that are cute to me, especially nature and animals.</p>
+ <p> I love photography because it allows me to capture special moments that come once in a lifetime. </p>
+ <p> Sometimes, when I take a picture, it helps me to see the world in a new way or shows me how much I have grown. </p>
+<div class="gallery">
+  <a target="_blank" href="images/IMG-3716.jpg">
+    <img src="images/IMG-3716.jpg" width="600" height="400">
+  </a>
+  <div class="desc">This is a picture of some of my SQL code for a project.</div>
+</div>
+<div class="gallery">
+  <a target="_blank" href="images/IMG-3772.jpg">
+    <img src="images/IMG-3772.jpg"width="600" height="400">
+  </a>
+  <div class="desc">This is a picture of a lioness from a Zoom safari trip.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/IMG-3789.jpg">
+    <img src="images/IMG-3789.jpg" width="600" height="400">
+  </a>
+  <div class="desc">This is a picture of a zerba from the same Zoom safari trip.</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/Screen Shot 2021-02-12 at 11.41.45 PM.png">
+    <img src="images/Screen Shot 2021-02-12 at 11.41.45 PM.png"  width="600" height="400">
+  </a>
+  <div class="desc">This is a picture of some of my teammates from a hackthon playing a game of virtual espace the room. </div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="images/DSC_0774.NEF.jpg">
+    <img src="images/DSC_0774.NEF.jpg" width="600" height="400">
+  </a>
+  <div class="desc">This is a picture of me at a friend's photoshoot.</div>
+</div>
+
+</div>
+
+
+<div id="Contact" class="tabcontent">
+ <center>
+  <h1>Contact</h1>
+  </center>
+      <p>Click here to get some of my contact information:</p>
+      <button onclick="addRandomContact()">Contact</button>
+      <div id="contact-container"></div>
+      <img src="images/download.jpg" >
+</div>
+    </div>
+    <h1>Server Date </h1>
+    <p>Click this button to see the  current date.</p>
+    <button onclick="showServerTime();">
+      Get date
+    </button>
+    <p id="date-container"></p>
+    <p>Click <a href="/date">here</a></p>
+  </body>
+</html>
+
+
+
+ 
+
+
+
