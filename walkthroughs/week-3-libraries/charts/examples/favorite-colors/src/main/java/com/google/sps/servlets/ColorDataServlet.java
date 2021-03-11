@@ -27,7 +27,11 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/color-data")
 public class ColorDataServlet extends HttpServlet {
 
-  private Map<String, Integer> colorVotes = new HashMap<>();
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    private Map<String, Integer> colorVotes = new HashMap<>();
 
   @Override
   public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
