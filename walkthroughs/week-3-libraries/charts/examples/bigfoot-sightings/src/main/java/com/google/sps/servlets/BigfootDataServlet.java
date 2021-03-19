@@ -27,7 +27,11 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/bigfoot-data")
 public class BigfootDataServlet extends HttpServlet {
 
-  private LinkedHashMap<Integer, Integer> bigfootSightings = new LinkedHashMap<>();
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    private LinkedHashMap<Integer, Integer> bigfootSightings = new LinkedHashMap<>();
 
   @Override
   public void init() {
